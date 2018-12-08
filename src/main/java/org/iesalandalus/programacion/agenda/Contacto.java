@@ -1,6 +1,6 @@
 package org.iesalandalus.programacion.agenda;
 
-import java.util.Objects;
+
 import java.util.StringTokenizer;
 import java.util.regex.Pattern;
 
@@ -12,7 +12,7 @@ public class Contacto {
 	private String nombre;
 	private String telefono;
 	private String correo;
-	private String iniciales;
+	
 
 	
 	/*                   CONSTRUCTOR                 */
@@ -44,7 +44,7 @@ public class Contacto {
 		
 		 
 
-		if (nombre != null && nombre != "") {
+		if (nombre != null && nombre != "" && existe == true) {
 			this.nombre = nombre;
 		} else {
 			throw new IllegalArgumentException("El nombre de un contacto no puede ser nulo o vacío.");
