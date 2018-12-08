@@ -1,11 +1,13 @@
 package org.iesalandalus.programacion.agenda.modelo;
 
 import static org.junit.Assert.*;
+
+import org.iesalandalus.programacion.agenda.Contacto;
 import org.junit.Test;
 
 public class ContactoTest {
 	
-/*	private static final String MENSAJE_EXCEPCION = "Debería haber saltado la excepción.";
+	private static final String MENSAJE_EXCEPCION = "Debería haber saltado la excepción.";
 
 	@Test
 	public void constructorValidoTest() {
@@ -26,14 +28,14 @@ public class ContactoTest {
 			contacto = new Contacto(null, "950112233", "joseramon.jimenez@iesalandalus.org");
 			fail(MENSAJE_EXCEPCION);
 		} catch (IllegalArgumentException e) {
-			assertEquals("El nombre de un contacto no puede ser nulo o vacío.", e.getMessage());
+			assertEquals("El nombre de un contacto no puede ser nulo o vac�o.", e.getMessage());
 			assertNull(contacto);
 		}
 		try {
 			contacto = new Contacto("", "950112233", "joseramon.jimenez@iesalandalus.org");
 			fail(MENSAJE_EXCEPCION);
 		} catch (IllegalArgumentException e) {
-			assertEquals("El nombre de un contacto no puede ser nulo o vacío.", e.getMessage());
+			assertEquals("El nombre de un contacto no puede ser nulo o vac�o.", e.getMessage());
 			assertNull(contacto);
 		}
 	}
@@ -45,35 +47,35 @@ public class ContactoTest {
 			contacto = new Contacto("José Ramón", null, "joseramon.jimenez@iesalandalus.org");
 			fail(MENSAJE_EXCEPCION);
 		} catch (IllegalArgumentException e) {
-			assertEquals("El teléfono de un contacto no puede ser nulo o vacío.", e.getMessage());
+			assertEquals("El tel�fono de un contacto no puede ser nulo o vac�o.", e.getMessage());
 			assertNull(contacto);
 		}
 		try {
 			contacto = new Contacto("José Ramón", "", "joseramon.jimenez@iesalandalus.org");
 			fail(MENSAJE_EXCEPCION);
 		} catch (IllegalArgumentException e) {
-			assertEquals("El teléfono de un contacto no puede ser nulo o vacío.", e.getMessage());
+			assertEquals("El tel�fono de un contacto no puede ser nulo o vac�o.", e.getMessage());
 			assertNull(contacto);
 		}
 		try {
 			contacto = new Contacto("José Ramón", "555112233", "joseramon.jimenez@iesalandalus.org");
 			fail(MENSAJE_EXCEPCION);
 		} catch (IllegalArgumentException e) {
-			assertEquals("El teléfono no tiene un formato válido.", e.getMessage());
+			assertEquals("El tel�fono no tiene un formato v�lido.", e.getMessage());
 			assertNull(contacto);
 		}
 		try {
 			contacto = new Contacto("José Ramón", "95011223", "joseramon.jimenez@iesalandalus.org");
 			fail(MENSAJE_EXCEPCION);
 		} catch (IllegalArgumentException e) {
-			assertEquals("El teléfono no tiene un formato válido.", e.getMessage());
+			assertEquals("El tel�fono no tiene un formato v�lido.", e.getMessage());
 			assertNull(contacto);
 		}
 		try {
 			contacto = new Contacto("José Ramón", "9501122334", "joseramon.jimenez@iesalandalus.org");
 			fail(MENSAJE_EXCEPCION);
 		} catch (IllegalArgumentException e) {
-			assertEquals("El teléfono no tiene un formato válido.", e.getMessage());
+			assertEquals("El tel�fono no tiene un formato v�lido.", e.getMessage());
 			assertNull(contacto);
 		}
 	}
@@ -85,42 +87,42 @@ public class ContactoTest {
 			contacto = new Contacto("José Ramón", "950112233", null);
 			fail(MENSAJE_EXCEPCION);
 		} catch (IllegalArgumentException e) {
-			assertEquals("El correo de un contacto no puede ser nulo o vacío.", e.getMessage());
+			assertEquals("El correo de un contacto no puede ser nulo o vac�o.", e.getMessage());
 			assertNull(contacto);
 		}
 		try {
 			contacto = new Contacto("José Ramón", "950112233", "");
 			fail(MENSAJE_EXCEPCION);
 		} catch (IllegalArgumentException e) {
-			assertEquals("El correo de un contacto no puede ser nulo o vacío.", e.getMessage());
+			assertEquals("El correo de un contacto no puede ser nulo o vac�o.", e.getMessage());
 			assertNull(contacto);
 		}
 		try {
 			contacto = new Contacto("José Ramón", "950112233", "joseramon.jimenez");
 			fail(MENSAJE_EXCEPCION);
 		} catch (IllegalArgumentException e) {
-			assertEquals("El correo no tiene un formato válido.", e.getMessage());
+			assertEquals("El correo no tiene un formato v�lido.", e.getMessage());
 			assertNull(contacto);
 		}
 		try {
 			contacto = new Contacto("José Ramón", "950112233", "joseramon.jimenez@iesalandalus");
 			fail(MENSAJE_EXCEPCION);
 		} catch (IllegalArgumentException e) {
-			assertEquals("El correo no tiene un formato válido.", e.getMessage());
+			assertEquals("El correo no tiene un formato v�lido.", e.getMessage());
 			assertNull(contacto);
 		}
 		try {
 			contacto = new Contacto("José Ramón", "950112233", "joseramon.jimenez@ies-alandalus.org");
 			fail(MENSAJE_EXCEPCION);
 		} catch (IllegalArgumentException e) {
-			assertEquals("El correo no tiene un formato válido.", e.getMessage());
+			assertEquals("El correo no tiene un formato v�lido.", e.getMessage());
 			assertNull(contacto);
 		}
 		try {
 			contacto = new Contacto("José Ramón", "950112233", "joseramon.jimenez@iesalandalus1.org");
 			fail(MENSAJE_EXCEPCION);
 		} catch (IllegalArgumentException e) {
-			assertEquals("El correo no tiene un formato válido.", e.getMessage());
+			assertEquals("El correo no tiene un formato v�lido.", e.getMessage());
 			assertNull(contacto);
 		}
 	}
@@ -147,5 +149,5 @@ public class ContactoTest {
 		assertEquals(contacto1, contacto2);
 		assertEquals(contacto1, contacto3);
 	}
-*/
+
 }
