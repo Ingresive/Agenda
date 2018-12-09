@@ -1,6 +1,6 @@
 # Tarea Agenda
 ## Profesor: José Ramón Jiménez Reyes
-## Alumno:
+## Alumno: Jose Luis S�nchez Garb�n
 
 La tarea va a consistir en gestionar una agenda de nuestros contactos. He subido a GitHub un esqueleto de proyecto gradle que ya lleva incluidos todos los test necesarios que el programa debe pasar. Dichos test están todos comentados y deberás ir descomentándolos conforme vayas avanzando con la tarea. La URL del repositorios es en la que te encuentras.
 
