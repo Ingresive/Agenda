@@ -89,10 +89,32 @@ public class Agenda {
 	}
 	
 	
+	/*  MÉTODO BUSCAR   */
 	
+	public Contacto buscar(String nombreContacto) {
+
+		if (buscarIndiceCliente(nombreContacto) != 51) {
+
+			return contactos[buscarIndiceCliente(nombreContacto)];
+
+		}
+
+		return null;
+
+	}
 	
-	
-	
+	private int buscarIndiceCliente(String nombreClienteABuscar) {
+
+		for (int k = 0; k < numContactos; k++) {
+
+			if (contactos[k].getNombre().equals(nombreClienteABuscar)) {
+
+				return k;
+			}
+
+		}   return  51;
+
+	}
 	
 	
 	
